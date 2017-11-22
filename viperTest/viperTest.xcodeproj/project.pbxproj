@@ -54,14 +54,38 @@
 		B477069A1FC5F09E00C29D8E /* viperTest */ = {
 			isa = PBXGroup;
 			children = (
+				B47706AE1FC5F57E00C29D8E /* Modules */,
+				B47706AD1FC5F57100C29D8E /* Application */,
+				B47706AF1FC5F58600C29D8E /* Assets */,
 				B477069B1FC5F09E00C29D8E /* AppDelegate.swift */,
 				B477069D1FC5F09E00C29D8E /* ViewController.swift */,
 				B477069F1FC5F09F00C29D8E /* Main.storyboard */,
-				B47706A21FC5F09F00C29D8E /* Assets.xcassets */,
 				B47706A41FC5F09F00C29D8E /* LaunchScreen.storyboard */,
 				B47706A71FC5F09F00C29D8E /* Info.plist */,
 			);
 			path = viperTest;
+			sourceTree = "<group>";
+		};
+		B47706AD1FC5F57100C29D8E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		B47706AE1FC5F57E00C29D8E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		B47706AF1FC5F58600C29D8E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B47706A21FC5F09F00C29D8E /* Assets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
