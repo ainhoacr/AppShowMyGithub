@@ -179,13 +179,20 @@
 		B4527EFD1FC7697500A67088 /* ListRepos */ = {
 			isa = PBXGroup;
 			children = (
-				B41422591FC6155E00881653 /* Entity */,
 				B414224C1FC6155D00881653 /* Interactor */,
 				B41422501FC6155D00881653 /* Presenter */,
 				B41422561FC6155D00881653 /* Router */,
 				B41422531FC6155D00881653 /* View */,
 			);
 			path = ListRepos;
+			sourceTree = "<group>";
+		};
+		B4527EFE1FC777B800A67088 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B41422591FC6155E00881653 /* Entity */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		B477068F1FC5F09E00C29D8E = {
@@ -228,6 +235,7 @@
 		B47706AE1FC5F57E00C29D8E /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				B4527EFE1FC777B800A67088 /* Common */,
 				B414224A1FC6155D00881653 /* Coordinator */,
 				B47706B01FC6028B00C29D8E /* Custom */,
 				B4527EFD1FC7697500A67088 /* ListRepos */,
