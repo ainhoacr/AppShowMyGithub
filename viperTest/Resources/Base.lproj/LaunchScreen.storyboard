@@ -14,12 +14,12 @@
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ainhoa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U5g-IN-Qfs">
-                                <rect key="frame" x="160.5" y="536" width="53" height="21"/>
+                                <rect key="frame" x="160.5" y="537" width="53" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -31,11 +31,19 @@
                                     <constraint firstAttribute="height" constant="200" id="Mdu-Fs-AT2"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Developer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rk1-z7-SaQ">
+                                <rect key="frame" x="132.5" y="566" width="109.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="U5g-IN-Qfs" secondAttribute="bottom" constant="110" id="Pfb-6X-fS9"/>
+                            <constraint firstItem="rk1-z7-SaQ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Geb-ql-UXk"/>
                             <constraint firstItem="EdR-ot-zE5" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="l97-CQ-OM1"/>
+                            <constraint firstItem="rk1-z7-SaQ" firstAttribute="top" secondItem="U5g-IN-Qfs" secondAttribute="bottom" constant="8" id="p9t-Kw-XbM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rk1-z7-SaQ" secondAttribute="bottom" constant="80" id="tYZ-Ui-4Ng"/>
                             <constraint firstItem="EdR-ot-zE5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="130" id="vcU-AG-nN4"/>
                             <constraint firstItem="U5g-IN-Qfs" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="yEA-h4-gDj"/>
                         </constraints>
