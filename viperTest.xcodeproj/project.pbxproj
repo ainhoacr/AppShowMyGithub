@@ -13,8 +13,8 @@
 		B41422661FC6155E00881653 /* InteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B414224F1FC6155D00881653 /* InteractorProtocol.swift */; };
 		B41422671FC6155E00881653 /* PresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41422511FC6155D00881653 /* PresenterProtocol.swift */; };
 		B41422681FC6155E00881653 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41422521FC6155D00881653 /* Presenter.swift */; };
-		B41422691FC6155E00881653 /* ViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41422541FC6155D00881653 /* ViewControllerProtocol.swift */; };
-		B414226A1FC6155E00881653 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41422551FC6155D00881653 /* ViewController.swift */; };
+		B41422691FC6155E00881653 /* ListReposViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41422541FC6155D00881653 /* ListReposViewControllerProtocol.swift */; };
+		B414226A1FC6155E00881653 /* ListReposViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41422551FC6155D00881653 /* ListReposViewController.swift */; };
 		B414226B1FC6155E00881653 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41422571FC6155E00881653 /* Router.swift */; };
 		B414226C1FC6155E00881653 /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41422581FC6155E00881653 /* RouterProtocol.swift */; };
 		B414226D1FC6155E00881653 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B414225B1FC6155E00881653 /* DataManager.swift */; };
@@ -37,8 +37,8 @@
 		B414224F1FC6155D00881653 /* InteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractorProtocol.swift; sourceTree = "<group>"; };
 		B41422511FC6155D00881653 /* PresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterProtocol.swift; sourceTree = "<group>"; };
 		B41422521FC6155D00881653 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
-		B41422541FC6155D00881653 /* ViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerProtocol.swift; sourceTree = "<group>"; };
-		B41422551FC6155D00881653 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B41422541FC6155D00881653 /* ListReposViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListReposViewControllerProtocol.swift; sourceTree = "<group>"; };
+		B41422551FC6155D00881653 /* ListReposViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListReposViewController.swift; sourceTree = "<group>"; };
 		B41422571FC6155E00881653 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		B41422581FC6155E00881653 /* RouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
 		B414225B1FC6155E00881653 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
@@ -118,8 +118,8 @@
 		B41422531FC6155D00881653 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B41422541FC6155D00881653 /* ViewControllerProtocol.swift */,
-				B41422551FC6155D00881653 /* ViewController.swift */,
+				B41422541FC6155D00881653 /* ListReposViewControllerProtocol.swift */,
+				B41422551FC6155D00881653 /* ListReposViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -195,6 +195,45 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		B4527EFF1FC780A800A67088 /* DetailRepo */ = {
+			isa = PBXGroup;
+			children = (
+				B4527F011FC780F400A67088 /* Interactor */,
+				B4527F021FC780FD00A67088 /* Presenter */,
+				B4527F031FC7810800A67088 /* Router */,
+				B4527F041FC7810E00A67088 /* View */,
+			);
+			path = DetailRepo;
+			sourceTree = "<group>";
+		};
+		B4527F011FC780F400A67088 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B4527F021FC780FD00A67088 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B4527F031FC7810800A67088 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B4527F041FC7810E00A67088 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B477068F1FC5F09E00C29D8E = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +278,7 @@
 				B414224A1FC6155D00881653 /* Coordinator */,
 				B47706B01FC6028B00C29D8E /* Custom */,
 				B4527EFD1FC7697500A67088 /* ListRepos */,
+				B4527EFF1FC780A800A67088 /* DetailRepo */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -404,11 +444,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B41422691FC6155E00881653 /* ViewControllerProtocol.swift in Sources */,
+				B41422691FC6155E00881653 /* ListReposViewControllerProtocol.swift in Sources */,
 				B414226D1FC6155E00881653 /* DataManager.swift in Sources */,
 				B414226B1FC6155E00881653 /* Router.swift in Sources */,
 				B41422681FC6155E00881653 /* Presenter.swift in Sources */,
-				B414226A1FC6155E00881653 /* ViewController.swift in Sources */,
+				B414226A1FC6155E00881653 /* ListReposViewController.swift in Sources */,
 				B41422661FC6155E00881653 /* InteractorProtocol.swift in Sources */,
 				B414226F1FC6155E00881653 /* Repository.swift in Sources */,
 				B41422671FC6155E00881653 /* PresenterProtocol.swift in Sources */,

@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol ViewControllerProtocol: class {
+protocol ListReposViewControllerProtocol: class {
 
     func showData(data: Array<Any>)
 }

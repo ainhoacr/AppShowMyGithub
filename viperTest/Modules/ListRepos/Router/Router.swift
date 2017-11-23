@@ -11,7 +11,7 @@ import UIKit
 class Router: NSObject, RouterProtocol {
     
     //build objects
-    let vc: ViewController = ViewController()
+    let vc: ListReposViewController = ListReposViewController()
     let presenter = Presenter()
     let interactor = Interactor()
     let dataManager = DataManager()

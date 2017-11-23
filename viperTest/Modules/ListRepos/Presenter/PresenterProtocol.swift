@@ -10,7 +10,7 @@ import UIKit
 
 protocol PresenterProtocol: class {
 
-    var view: ViewControllerProtocol? {get set}
+    var view: ListReposViewControllerProtocol? {get set}
     var interactor: InteractorProtocol? {get set}
     var router: RouterProtocol? {get set}
     

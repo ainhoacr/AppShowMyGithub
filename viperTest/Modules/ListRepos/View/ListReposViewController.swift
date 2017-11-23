@@ -9,7 +9,7 @@
 import UIKit
 import PKHUD
 
-class ViewController: UIViewController {
+class ListReposViewController: UIViewController {
     
     var presenter: PresenterProtocol?
     var collectionView: UICollectionView!
@@ -48,7 +48,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: ViewControllerProtocol {
+extension ListReposViewController: ListReposViewControllerProtocol {
     
     func showData(data: Array<Any>) {
         HUD.hide()
@@ -57,7 +57,7 @@ extension ViewController: ViewControllerProtocol {
     }
 }
 
-extension ViewController: UICollectionViewDataSource {
+extension ListReposViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.repositories?.count ?? 0

@@ -10,7 +10,7 @@ import UIKit
 
 class Presenter: NSObject, PresenterProtocol {
     
-    weak var view: ViewControllerProtocol?
+    weak var view: ListReposViewControllerProtocol?
     var interactor: InteractorProtocol?
     var router: RouterProtocol?
     var repositories: Array<Any>!
