@@ -12,7 +12,7 @@ import ObjectMapper
 
 class DataManager: NSObject, DataManagerProtocol {
     
-    var interactor: InteractorOutputProtocol?
+    var interactor: ListReposInteractorOutputProtocol?
     var repositories = [Repository]()
     
     func fecthData() {

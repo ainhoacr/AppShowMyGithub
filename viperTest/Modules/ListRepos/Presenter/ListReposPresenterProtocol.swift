@@ -1,5 +1,5 @@
 //
-//  PresenterProtocol.swift
+//  ListReposPresenterProtocol.swift
 //  viperTest
 //
 //  Created by Ainhoa Calviño on 11/11/17.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-protocol PresenterProtocol: class {
+protocol ListReposPresenterProtocol: class {
 
     var view: ListReposViewControllerProtocol? {get set}
-    var interactor: InteractorProtocol? {get set}
-    var router: RouterProtocol? {get set}
+    var interactor: ListReposInteractorProtocol? {get set}
+    var router: ListReposRouterProtocol? {get set}
     
     func updateView()
 }

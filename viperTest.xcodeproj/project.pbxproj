@@ -8,15 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		945E123BBCADD1474B76A7BF /* Pods_viperTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBDAB37BD0ACF62023F581A /* Pods_viperTest.framework */; };
-		B41422641FC6155E00881653 /* InteractorOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B414224D1FC6155D00881653 /* InteractorOutputProtocol.swift */; };
-		B41422651FC6155E00881653 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B414224E1FC6155D00881653 /* Interactor.swift */; };
-		B41422661FC6155E00881653 /* InteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B414224F1FC6155D00881653 /* InteractorProtocol.swift */; };
-		B41422671FC6155E00881653 /* PresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41422511FC6155D00881653 /* PresenterProtocol.swift */; };
-		B41422681FC6155E00881653 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41422521FC6155D00881653 /* Presenter.swift */; };
+		B41422641FC6155E00881653 /* ListReposInteractorOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B414224D1FC6155D00881653 /* ListReposInteractorOutputProtocol.swift */; };
+		B41422651FC6155E00881653 /* ListReposInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B414224E1FC6155D00881653 /* ListReposInteractor.swift */; };
+		B41422661FC6155E00881653 /* ListReposInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B414224F1FC6155D00881653 /* ListReposInteractorProtocol.swift */; };
+		B41422671FC6155E00881653 /* ListReposPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41422511FC6155D00881653 /* ListReposPresenterProtocol.swift */; };
+		B41422681FC6155E00881653 /* ListReposPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41422521FC6155D00881653 /* ListReposPresenter.swift */; };
 		B41422691FC6155E00881653 /* ListReposViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41422541FC6155D00881653 /* ListReposViewControllerProtocol.swift */; };
 		B414226A1FC6155E00881653 /* ListReposViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41422551FC6155D00881653 /* ListReposViewController.swift */; };
-		B414226B1FC6155E00881653 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41422571FC6155E00881653 /* Router.swift */; };
-		B414226C1FC6155E00881653 /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41422581FC6155E00881653 /* RouterProtocol.swift */; };
+		B414226B1FC6155E00881653 /* ListReposRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41422571FC6155E00881653 /* ListReposRouter.swift */; };
+		B414226C1FC6155E00881653 /* ListReposRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41422581FC6155E00881653 /* ListReposRouterProtocol.swift */; };
 		B414226D1FC6155E00881653 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B414225B1FC6155E00881653 /* DataManager.swift */; };
 		B414226E1FC6155E00881653 /* DataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B414225C1FC6155E00881653 /* DataManagerProtocol.swift */; };
 		B414226F1FC6155E00881653 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B414225D1FC6155E00881653 /* Repository.swift */; };
@@ -25,6 +25,15 @@
 		B41422751FC63A1000881653 /* LanguageCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41422741FC63A1000881653 /* LanguageCoordinator.swift */; };
 		B41422781FC63AB800881653 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B41422771FC63AB800881653 /* Localizable.strings */; };
 		B4527EFC1FC7445800A67088 /* ColorCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4527EFB1FC7445800A67088 /* ColorCoordinator.swift */; };
+		B4527F061FC7829300A67088 /* RepoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4527F051FC7829300A67088 /* RepoDetailViewController.swift */; };
+		B4527F081FC782A800A67088 /* RepoDetailViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4527F071FC782A800A67088 /* RepoDetailViewControllerProtocol.swift */; };
+		B4527F0A1FC783E400A67088 /* RepoDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4527F091FC783E400A67088 /* RepoDetailRouter.swift */; };
+		B4527F0C1FC783F600A67088 /* RepoDetailRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4527F0B1FC783F600A67088 /* RepoDetailRouterProtocol.swift */; };
+		B4527F0E1FC7840900A67088 /* RepoDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4527F0D1FC7840900A67088 /* RepoDetailPresenter.swift */; };
+		B4527F101FC7842100A67088 /* RepoDetailPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4527F0F1FC7842100A67088 /* RepoDetailPresenterProtocol.swift */; };
+		B4527F121FC7843C00A67088 /* RepoDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4527F111FC7843C00A67088 /* RepoDetailInteractor.swift */; };
+		B4527F141FC7844E00A67088 /* RepoDetailInteractorOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4527F131FC7844E00A67088 /* RepoDetailInteractorOutputProtocol.swift */; };
+		B4527F161FC7845900A67088 /* RepoDetailInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4527F151FC7845900A67088 /* RepoDetailInteractorProtocol.swift */; };
 		B477069C1FC5F09E00C29D8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B477069B1FC5F09E00C29D8E /* AppDelegate.swift */; };
 		B47706A31FC5F09F00C29D8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B47706A21FC5F09F00C29D8E /* Assets.xcassets */; };
 		B47706A61FC5F09F00C29D8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B47706A41FC5F09F00C29D8E /* LaunchScreen.storyboard */; };
@@ -32,15 +41,15 @@
 
 /* Begin PBXFileReference section */
 		66133B2DBA1CB106FC644E9F /* Pods-viperTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-viperTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-viperTest/Pods-viperTest.release.xcconfig"; sourceTree = "<group>"; };
-		B414224D1FC6155D00881653 /* InteractorOutputProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractorOutputProtocol.swift; sourceTree = "<group>"; };
-		B414224E1FC6155D00881653 /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
-		B414224F1FC6155D00881653 /* InteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractorProtocol.swift; sourceTree = "<group>"; };
-		B41422511FC6155D00881653 /* PresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterProtocol.swift; sourceTree = "<group>"; };
-		B41422521FC6155D00881653 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		B414224D1FC6155D00881653 /* ListReposInteractorOutputProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListReposInteractorOutputProtocol.swift; sourceTree = "<group>"; };
+		B414224E1FC6155D00881653 /* ListReposInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListReposInteractor.swift; sourceTree = "<group>"; };
+		B414224F1FC6155D00881653 /* ListReposInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListReposInteractorProtocol.swift; sourceTree = "<group>"; };
+		B41422511FC6155D00881653 /* ListReposPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListReposPresenterProtocol.swift; sourceTree = "<group>"; };
+		B41422521FC6155D00881653 /* ListReposPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListReposPresenter.swift; sourceTree = "<group>"; };
 		B41422541FC6155D00881653 /* ListReposViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListReposViewControllerProtocol.swift; sourceTree = "<group>"; };
 		B41422551FC6155D00881653 /* ListReposViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListReposViewController.swift; sourceTree = "<group>"; };
-		B41422571FC6155E00881653 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		B41422581FC6155E00881653 /* RouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
+		B41422571FC6155E00881653 /* ListReposRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListReposRouter.swift; sourceTree = "<group>"; };
+		B41422581FC6155E00881653 /* ListReposRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListReposRouterProtocol.swift; sourceTree = "<group>"; };
 		B414225B1FC6155E00881653 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		B414225C1FC6155E00881653 /* DataManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManagerProtocol.swift; sourceTree = "<group>"; };
 		B414225D1FC6155E00881653 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
@@ -49,6 +58,15 @@
 		B41422741FC63A1000881653 /* LanguageCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCoordinator.swift; sourceTree = "<group>"; };
 		B41422771FC63AB800881653 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		B4527EFB1FC7445800A67088 /* ColorCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCoordinator.swift; sourceTree = "<group>"; };
+		B4527F051FC7829300A67088 /* RepoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailViewController.swift; sourceTree = "<group>"; };
+		B4527F071FC782A800A67088 /* RepoDetailViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailViewControllerProtocol.swift; sourceTree = "<group>"; };
+		B4527F091FC783E400A67088 /* RepoDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailRouter.swift; sourceTree = "<group>"; };
+		B4527F0B1FC783F600A67088 /* RepoDetailRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailRouterProtocol.swift; sourceTree = "<group>"; };
+		B4527F0D1FC7840900A67088 /* RepoDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailPresenter.swift; sourceTree = "<group>"; };
+		B4527F0F1FC7842100A67088 /* RepoDetailPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailPresenterProtocol.swift; sourceTree = "<group>"; };
+		B4527F111FC7843C00A67088 /* RepoDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailInteractor.swift; sourceTree = "<group>"; };
+		B4527F131FC7844E00A67088 /* RepoDetailInteractorOutputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailInteractorOutputProtocol.swift; sourceTree = "<group>"; };
+		B4527F151FC7845900A67088 /* RepoDetailInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailInteractorProtocol.swift; sourceTree = "<group>"; };
 		B47706981FC5F09E00C29D8E /* viperTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = viperTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B477069B1FC5F09E00C29D8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B47706A21FC5F09F00C29D8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,9 +117,9 @@
 		B414224C1FC6155D00881653 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				B414224D1FC6155D00881653 /* InteractorOutputProtocol.swift */,
-				B414224E1FC6155D00881653 /* Interactor.swift */,
-				B414224F1FC6155D00881653 /* InteractorProtocol.swift */,
+				B414224D1FC6155D00881653 /* ListReposInteractorOutputProtocol.swift */,
+				B414224E1FC6155D00881653 /* ListReposInteractor.swift */,
+				B414224F1FC6155D00881653 /* ListReposInteractorProtocol.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -109,8 +127,8 @@
 		B41422501FC6155D00881653 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				B41422511FC6155D00881653 /* PresenterProtocol.swift */,
-				B41422521FC6155D00881653 /* Presenter.swift */,
+				B41422511FC6155D00881653 /* ListReposPresenterProtocol.swift */,
+				B41422521FC6155D00881653 /* ListReposPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -127,8 +145,8 @@
 		B41422561FC6155D00881653 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				B41422571FC6155E00881653 /* Router.swift */,
-				B41422581FC6155E00881653 /* RouterProtocol.swift */,
+				B41422571FC6155E00881653 /* ListReposRouter.swift */,
+				B41422581FC6155E00881653 /* ListReposRouterProtocol.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -209,6 +227,9 @@
 		B4527F011FC780F400A67088 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				B4527F111FC7843C00A67088 /* RepoDetailInteractor.swift */,
+				B4527F131FC7844E00A67088 /* RepoDetailInteractorOutputProtocol.swift */,
+				B4527F151FC7845900A67088 /* RepoDetailInteractorProtocol.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -216,6 +237,8 @@
 		B4527F021FC780FD00A67088 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				B4527F0D1FC7840900A67088 /* RepoDetailPresenter.swift */,
+				B4527F0F1FC7842100A67088 /* RepoDetailPresenterProtocol.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -223,6 +246,8 @@
 		B4527F031FC7810800A67088 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				B4527F091FC783E400A67088 /* RepoDetailRouter.swift */,
+				B4527F0B1FC783F600A67088 /* RepoDetailRouterProtocol.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -230,6 +255,8 @@
 		B4527F041FC7810E00A67088 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B4527F051FC7829300A67088 /* RepoDetailViewController.swift */,
+				B4527F071FC782A800A67088 /* RepoDetailViewControllerProtocol.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -446,21 +473,30 @@
 			files = (
 				B41422691FC6155E00881653 /* ListReposViewControllerProtocol.swift in Sources */,
 				B414226D1FC6155E00881653 /* DataManager.swift in Sources */,
-				B414226B1FC6155E00881653 /* Router.swift in Sources */,
-				B41422681FC6155E00881653 /* Presenter.swift in Sources */,
+				B4527F081FC782A800A67088 /* RepoDetailViewControllerProtocol.swift in Sources */,
+				B414226B1FC6155E00881653 /* ListReposRouter.swift in Sources */,
+				B41422681FC6155E00881653 /* ListReposPresenter.swift in Sources */,
 				B414226A1FC6155E00881653 /* ListReposViewController.swift in Sources */,
-				B41422661FC6155E00881653 /* InteractorProtocol.swift in Sources */,
+				B41422661FC6155E00881653 /* ListReposInteractorProtocol.swift in Sources */,
+				B4527F161FC7845900A67088 /* RepoDetailInteractorProtocol.swift in Sources */,
 				B414226F1FC6155E00881653 /* Repository.swift in Sources */,
-				B41422671FC6155E00881653 /* PresenterProtocol.swift in Sources */,
+				B41422671FC6155E00881653 /* ListReposPresenterProtocol.swift in Sources */,
+				B4527F0E1FC7840900A67088 /* RepoDetailPresenter.swift in Sources */,
+				B4527F0C1FC783F600A67088 /* RepoDetailRouterProtocol.swift in Sources */,
 				B477069C1FC5F09E00C29D8E /* AppDelegate.swift in Sources */,
-				B41422651FC6155E00881653 /* Interactor.swift in Sources */,
+				B41422651FC6155E00881653 /* ListReposInteractor.swift in Sources */,
+				B4527F0A1FC783E400A67088 /* RepoDetailRouter.swift in Sources */,
 				B414226E1FC6155E00881653 /* DataManagerProtocol.swift in Sources */,
-				B41422641FC6155E00881653 /* InteractorOutputProtocol.swift in Sources */,
+				B41422641FC6155E00881653 /* ListReposInteractorOutputProtocol.swift in Sources */,
 				B41422751FC63A1000881653 /* LanguageCoordinator.swift in Sources */,
+				B4527F121FC7843C00A67088 /* RepoDetailInteractor.swift in Sources */,
 				B4527EFC1FC7445800A67088 /* ColorCoordinator.swift in Sources */,
 				B41422701FC6155E00881653 /* Owner.swift in Sources */,
+				B4527F101FC7842100A67088 /* RepoDetailPresenterProtocol.swift in Sources */,
 				B41422731FC63A0600881653 /* TwoLabelsCollectionViewCell.swift in Sources */,
-				B414226C1FC6155E00881653 /* RouterProtocol.swift in Sources */,
+				B414226C1FC6155E00881653 /* ListReposRouterProtocol.swift in Sources */,
+				B4527F141FC7844E00A67088 /* RepoDetailInteractorOutputProtocol.swift in Sources */,
+				B4527F061FC7829300A67088 /* RepoDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

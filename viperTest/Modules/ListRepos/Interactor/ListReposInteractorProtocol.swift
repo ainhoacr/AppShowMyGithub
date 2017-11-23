@@ -1,5 +1,5 @@
 //
-//  InteractorProtocol.swift
+//  ListReposInteractorProtocol.swift
 //  viperTest
 //
 //  Created by Ainhoa Calviño on 11/11/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol InteractorProtocol: class {
+protocol ListReposInteractorProtocol: class {
 
     var dataManager: DataManagerProtocol? {get set}
     

@@ -10,7 +10,7 @@ import UIKit
 
 protocol DataManagerProtocol: class {
 
-    var interactor: InteractorOutputProtocol? {get set}
+    var interactor: ListReposInteractorOutputProtocol? {get set}
 
     func fecthData()
 }

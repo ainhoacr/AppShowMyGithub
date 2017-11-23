@@ -1,5 +1,5 @@
 //
-//  RouterProtocol.swift
+//  ListReposRouterProtocol.swift
 //  viperTest
 //
 //  Created by Ainhoa Calviño on 11/11/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol RouterProtocol: class {
+protocol ListReposRouterProtocol: class {
 
     func presentInterfaceFromWindow(window: UIWindow)
 }

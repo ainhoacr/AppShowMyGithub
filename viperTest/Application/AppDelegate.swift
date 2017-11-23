@@ -45,7 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func configureWindow() {
-        let router = Router()
+        let router = ListReposRouter()
         
         self.window = UIWindow()
         let screen:UIScreen = UIScreen.main

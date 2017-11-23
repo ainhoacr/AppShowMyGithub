@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ListReposViewController.swift
 //  viperTest
 //
 //  Created by Ainhoa Calviño on 10/11/17.
@@ -11,7 +11,7 @@ import PKHUD
 
 class ListReposViewController: UIViewController {
     
-    var presenter: PresenterProtocol?
+    var presenter: ListReposPresenterProtocol?
     var collectionView: UICollectionView!
     var repositories: Array<Any>!
     

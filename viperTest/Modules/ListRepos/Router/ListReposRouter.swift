@@ -1,5 +1,5 @@
 //
-//  Router.swift
+//  ListReposRouter.swift
 //  viperTest
 //
 //  Created by Ainhoa Calviño on 11/11/17.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-class Router: NSObject, RouterProtocol {
+class ListReposRouter: NSObject, ListReposRouterProtocol {
     
     //build objects
     let vc: ListReposViewController = ListReposViewController()
-    let presenter = Presenter()
-    let interactor = Interactor()
+    let presenter = ListReposPresenter()
+    let interactor = ListReposInteractor()
     let dataManager = DataManager()
     var navigationController: UINavigationController?
     

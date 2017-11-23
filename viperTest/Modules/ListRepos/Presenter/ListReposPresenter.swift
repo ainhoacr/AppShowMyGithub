@@ -1,5 +1,5 @@
 //
-//  Presenter.swift
+//  ListReposPresenter.swift
 //  viperTest
 //
 //  Created by Ainhoa Calviño on 11/11/17.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class Presenter: NSObject, PresenterProtocol {
+class ListReposPresenter: NSObject, ListReposPresenterProtocol {
     
     weak var view: ListReposViewControllerProtocol?
-    var interactor: InteractorProtocol?
-    var router: RouterProtocol?
+    var interactor: ListReposInteractorProtocol?
+    var router: ListReposRouterProtocol?
     var repositories: Array<Any>!
     
     func updateView() {
@@ -20,7 +20,7 @@ class Presenter: NSObject, PresenterProtocol {
     }
 }
 
-extension Presenter: InteractorOutputProtocol {
+extension ListReposPresenter: ListReposInteractorOutputProtocol {
     
     func setData(repositories: Array<Repository>) {
         if repositories.count > 0 {

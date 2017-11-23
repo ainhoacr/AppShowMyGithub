@@ -1,5 +1,5 @@
 //
-//  InteractorOutputProtocol.swift
+//  ListReposInteractorOutputProtocol.swift
 //  viperTest
 //
 //  Created by Ainhoa Calviño on 11/11/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol InteractorOutputProtocol: class {
+protocol ListReposInteractorOutputProtocol: class {
 
     func setData(repositories: Array<Repository>)
 }
