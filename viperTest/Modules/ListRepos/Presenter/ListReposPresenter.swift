@@ -18,6 +18,10 @@ class ListReposPresenter: NSObject, ListReposPresenterProtocol {
     func updateView() {
         self.interactor?.getData()
     }
+    
+    func didTap(repository: Repository) {
+        router?.goToDetail(repository: repository)
+    }
 }
 
 extension ListReposPresenter: ListReposInteractorOutputProtocol {

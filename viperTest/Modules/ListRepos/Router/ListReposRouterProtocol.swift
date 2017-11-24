@@ -11,4 +11,5 @@ import UIKit
 protocol ListReposRouterProtocol: class {
 
     func presentInterfaceFromWindow(window: UIWindow)
+    func goToDetail(repository: Repository)
 }

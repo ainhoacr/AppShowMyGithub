@@ -40,4 +40,10 @@ class ListReposRouter: NSObject, ListReposRouterProtocol {
         
         window.rootViewController = self.navigationController
     }
+    
+    func goToDetail(repository: Repository) {
+        let view = RepoDetailRouter.init().vc
+        view.repository = repository
+        self.vc.navigationController?.pushViewController(view, animated: true)
+    }
 }

@@ -15,4 +15,5 @@ protocol ListReposPresenterProtocol: class {
     var router: ListReposRouterProtocol? {get set}
     
     func updateView()
+    func didTap(repository: Repository)
 }
