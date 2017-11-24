@@ -18,6 +18,7 @@ class ListReposViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setData()
         setupCollectionView()
     }
 
@@ -27,10 +28,13 @@ class ListReposViewController: UIViewController {
         setupView()
     }
     
-    func setupView() {
-        self.title = LanguageCoordinator.localized(string: "title_nav_bar")
+    func setData() {
         self.presenter?.updateView()
         HUD.show(.progress)
+    }
+    
+    func setupView() {
+        self.title = LanguageCoordinator.localized(string: "title_nav_bar")
     }
     
     func setupCollectionView() {
