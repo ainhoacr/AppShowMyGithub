@@ -42,9 +42,14 @@ class ListReposViewController: UIViewController {
         
         collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
         collectionView.dataSource = self
+        collectionView.delegate = self
         collectionView.register(TwoLabelsCollectionViewCell.self, forCellWithReuseIdentifier: TwoLabelsCollectionViewCell.preferredIndetifier())
         collectionView.backgroundColor = .white
         self.view.addSubview(collectionView)
+    }
+    
+    func didTap(repository: Repository) {
+        presenter?.didTap(repository: repository)
     }
 }
 
@@ -79,5 +84,15 @@ extension ListReposViewController: UICollectionViewDataSource {
             }
         }
         return cell
+    }
+}
+
+extension ListReposViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+        
+        let repository = self.repositories[indexPath.item] as! Repository
+        didTap(repository: repository)
     }
 }
