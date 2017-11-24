@@ -51,6 +51,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let screen:UIScreen = UIScreen.main
         
         self.window!.frame = screen.bounds
+        self.window?.tintColor = UIColor.purple
         if let window = self.window {
             router.presentInterfaceFromWindow(window: window)
         }
