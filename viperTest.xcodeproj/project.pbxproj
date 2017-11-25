@@ -34,6 +34,7 @@
 		B4527F121FC7843C00A67088 /* RepoDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4527F111FC7843C00A67088 /* RepoDetailInteractor.swift */; };
 		B4527F141FC7844E00A67088 /* RepoDetailInteractorOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4527F131FC7844E00A67088 /* RepoDetailInteractorOutputProtocol.swift */; };
 		B4527F161FC7845900A67088 /* RepoDetailInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4527F151FC7845900A67088 /* RepoDetailInteractorProtocol.swift */; };
+		B4527F191FC8E91200A67088 /* CenterImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4527F181FC8E91200A67088 /* CenterImageTableViewCell.swift */; };
 		B477069C1FC5F09E00C29D8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B477069B1FC5F09E00C29D8E /* AppDelegate.swift */; };
 		B47706A31FC5F09F00C29D8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B47706A21FC5F09F00C29D8E /* Assets.xcassets */; };
 		B47706A61FC5F09F00C29D8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B47706A41FC5F09F00C29D8E /* LaunchScreen.storyboard */; };
@@ -67,6 +68,7 @@
 		B4527F111FC7843C00A67088 /* RepoDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailInteractor.swift; sourceTree = "<group>"; };
 		B4527F131FC7844E00A67088 /* RepoDetailInteractorOutputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailInteractorOutputProtocol.swift; sourceTree = "<group>"; };
 		B4527F151FC7845900A67088 /* RepoDetailInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailInteractorProtocol.swift; sourceTree = "<group>"; };
+		B4527F181FC8E91200A67088 /* CenterImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterImageTableViewCell.swift; sourceTree = "<group>"; };
 		B47706981FC5F09E00C29D8E /* viperTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = viperTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B477069B1FC5F09E00C29D8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B47706A21FC5F09F00C29D8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -261,6 +263,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		B4527F171FC8E8F500A67088 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				B4527F181FC8E91200A67088 /* CenterImageTableViewCell.swift */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
 		B477068F1FC5F09E00C29D8E = {
 			isa = PBXGroup;
 			children = (
@@ -323,6 +333,7 @@
 		B47706B01FC6028B00C29D8E /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				B4527F171FC8E8F500A67088 /* TableCells */,
 				B4780EE91FC612AB006E0AF3 /* CollectionCells */,
 			);
 			path = Custom;
@@ -473,6 +484,7 @@
 			files = (
 				B41422691FC6155E00881653 /* ListReposViewControllerProtocol.swift in Sources */,
 				B414226D1FC6155E00881653 /* DataManager.swift in Sources */,
+				B4527F191FC8E91200A67088 /* CenterImageTableViewCell.swift in Sources */,
 				B4527F081FC782A800A67088 /* RepoDetailViewControllerProtocol.swift in Sources */,
 				B414226B1FC6155E00881653 /* ListReposRouter.swift in Sources */,
 				B41422681FC6155E00881653 /* ListReposPresenter.swift in Sources */,
