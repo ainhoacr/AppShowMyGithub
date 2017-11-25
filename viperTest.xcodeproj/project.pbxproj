@@ -35,6 +35,8 @@
 		B4527F141FC7844E00A67088 /* RepoDetailInteractorOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4527F131FC7844E00A67088 /* RepoDetailInteractorOutputProtocol.swift */; };
 		B4527F161FC7845900A67088 /* RepoDetailInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4527F151FC7845900A67088 /* RepoDetailInteractorProtocol.swift */; };
 		B4527F191FC8E91200A67088 /* CenterImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4527F181FC8E91200A67088 /* CenterImageTableViewCell.swift */; };
+		B4527F1B1FC8F11900A67088 /* LabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4527F1A1FC8F11900A67088 /* LabelTableViewCell.swift */; };
+		B4527F1E1FC8F4D600A67088 /* String+Extended.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4527F1D1FC8F4D600A67088 /* String+Extended.swift */; };
 		B477069C1FC5F09E00C29D8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B477069B1FC5F09E00C29D8E /* AppDelegate.swift */; };
 		B47706A31FC5F09F00C29D8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B47706A21FC5F09F00C29D8E /* Assets.xcassets */; };
 		B47706A61FC5F09F00C29D8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B47706A41FC5F09F00C29D8E /* LaunchScreen.storyboard */; };
@@ -69,6 +71,8 @@
 		B4527F131FC7844E00A67088 /* RepoDetailInteractorOutputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailInteractorOutputProtocol.swift; sourceTree = "<group>"; };
 		B4527F151FC7845900A67088 /* RepoDetailInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailInteractorProtocol.swift; sourceTree = "<group>"; };
 		B4527F181FC8E91200A67088 /* CenterImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterImageTableViewCell.swift; sourceTree = "<group>"; };
+		B4527F1A1FC8F11900A67088 /* LabelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTableViewCell.swift; sourceTree = "<group>"; };
+		B4527F1D1FC8F4D600A67088 /* String+Extended.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extended.swift"; sourceTree = "<group>"; };
 		B47706981FC5F09E00C29D8E /* viperTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = viperTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B477069B1FC5F09E00C29D8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B47706A21FC5F09F00C29D8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -210,6 +214,8 @@
 		B4527EFE1FC777B800A67088 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B4527F1C1FC8F48700A67088 /* Extensions */,
+				B414224A1FC6155D00881653 /* Coordinator */,
 				B41422591FC6155E00881653 /* Entity */,
 			);
 			path = Common;
@@ -267,8 +273,17 @@
 			isa = PBXGroup;
 			children = (
 				B4527F181FC8E91200A67088 /* CenterImageTableViewCell.swift */,
+				B4527F1A1FC8F11900A67088 /* LabelTableViewCell.swift */,
 			);
 			path = TableCells;
+			sourceTree = "<group>";
+		};
+		B4527F1C1FC8F48700A67088 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B4527F1D1FC8F4D600A67088 /* String+Extended.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		B477068F1FC5F09E00C29D8E = {
@@ -312,7 +327,6 @@
 			isa = PBXGroup;
 			children = (
 				B4527EFE1FC777B800A67088 /* Common */,
-				B414224A1FC6155D00881653 /* Coordinator */,
 				B47706B01FC6028B00C29D8E /* Custom */,
 				B4527EFD1FC7697500A67088 /* ListRepos */,
 				B4527EFF1FC780A800A67088 /* DetailRepo */,
@@ -500,6 +514,8 @@
 				B4527F0A1FC783E400A67088 /* RepoDetailRouter.swift in Sources */,
 				B414226E1FC6155E00881653 /* DataManagerProtocol.swift in Sources */,
 				B41422641FC6155E00881653 /* ListReposInteractorOutputProtocol.swift in Sources */,
+				B4527F1B1FC8F11900A67088 /* LabelTableViewCell.swift in Sources */,
+				B4527F1E1FC8F4D600A67088 /* String+Extended.swift in Sources */,
 				B41422751FC63A1000881653 /* LanguageCoordinator.swift in Sources */,
 				B4527F121FC7843C00A67088 /* RepoDetailInteractor.swift in Sources */,
 				B4527EFC1FC7445800A67088 /* ColorCoordinator.swift in Sources */,
