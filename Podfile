@@ -9,8 +9,8 @@ target 'viperTest' do
   # Pods for viperTest
   pod 'Alamofire'
   pod 'ObjectMapper'
-  pod 'PKHUD'
   pod 'SnapKit'
+  pod 'NVActivityIndicatorView'
 
 #  target 'viperTestTests' do
 #    inherit! :search_paths
