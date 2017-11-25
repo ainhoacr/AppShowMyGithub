@@ -1,2 +1,9 @@
 "title_nav_bar"        = "GitHub Público Ainhoa";
 "title_nav_bar_detail" = "Details";
+
+"detail_title" = "Título";
+"detail_language" = "Lenguaje";
+"detail_url" = "URL";
+"detail_updated" = "Última actualización";
+"detail_description" = "Descripción";
+
