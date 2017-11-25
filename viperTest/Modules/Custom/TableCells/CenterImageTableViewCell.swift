@@ -49,4 +49,8 @@ class CenterImageTableViewCell: UITableViewCell {
     class func preferredIndetifier() -> String {
         return String(describing: CenterImageTableViewCell.self)
     }
+    
+    class func preferredHeight() -> CGFloat {
+        return 140
+    }
 }
