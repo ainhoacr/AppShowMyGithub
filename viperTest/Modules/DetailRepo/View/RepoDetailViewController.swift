@@ -52,7 +52,7 @@ extension RepoDetailViewController: UITableViewDataSource {
         cells.append([LanguageCoordinator.localized(string: "detail_title") : self.repository.name!])
         cells.append([LanguageCoordinator.localized(string: "detail_language") : self.repository.language!])
         cells.append([LanguageCoordinator.localized(string: "detail_url") : self.repository.htmlUrl!])
-        cells.append([LanguageCoordinator.localized(string: "detail_updated") : self.repository.updatedAt!])
+        cells.append([LanguageCoordinator.localized(string: "detail_updated") : self.repository.formattedString()])
         cells.append([LanguageCoordinator.localized(string: "detail_description") : self.repository.descriptionRepo!])
         
         return cells
