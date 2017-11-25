@@ -64,7 +64,7 @@ class TwoLabelsCollectionViewCell: UICollectionViewCell {
         self.customContentView.layer.borderWidth = 0.5
     }
     
-    class func preferredIndetifier() -> String {
+    static func preferredIndetifier() -> String {
         return String(describing: TwoLabelsCollectionViewCell.self)
     }
 }

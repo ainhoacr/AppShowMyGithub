@@ -40,6 +40,7 @@
 		B477069C1FC5F09E00C29D8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B477069B1FC5F09E00C29D8E /* AppDelegate.swift */; };
 		B47706A31FC5F09F00C29D8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B47706A21FC5F09F00C29D8E /* Assets.xcassets */; };
 		B47706A61FC5F09F00C29D8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B47706A41FC5F09F00C29D8E /* LaunchScreen.storyboard */; };
+		B480C4161FC978DF00B78392 /* LoadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B480C4151FC978DF00B78392 /* LoadManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		B47706A21FC5F09F00C29D8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B47706A51FC5F09F00C29D8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B47706A71FC5F09F00C29D8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B480C4151FC978DF00B78392 /* LoadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadManager.swift; sourceTree = "<group>"; };
 		BFBDAB37BD0ACF62023F581A /* Pods_viperTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_viperTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E47674EEEB3D72A28C6672BB /* Pods-viperTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-viperTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-viperTest/Pods-viperTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -214,6 +216,7 @@
 		B4527EFE1FC777B800A67088 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B480C4141FC978C900B78392 /* Managers */,
 				B4527F1C1FC8F48700A67088 /* Extensions */,
 				B414224A1FC6155D00881653 /* Coordinator */,
 				B41422591FC6155E00881653 /* Entity */,
@@ -361,6 +364,14 @@
 			path = CollectionCells;
 			sourceTree = "<group>";
 		};
+		B480C4141FC978C900B78392 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B480C4151FC978DF00B78392 /* LoadManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -458,15 +469,15 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-viperTest/Pods-viperTest-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,6 +524,7 @@
 				B41422651FC6155E00881653 /* ListReposInteractor.swift in Sources */,
 				B4527F0A1FC783E400A67088 /* RepoDetailRouter.swift in Sources */,
 				B414226E1FC6155E00881653 /* DataManagerProtocol.swift in Sources */,
+				B480C4161FC978DF00B78392 /* LoadManager.swift in Sources */,
 				B41422641FC6155E00881653 /* ListReposInteractorOutputProtocol.swift in Sources */,
 				B4527F1B1FC8F11900A67088 /* LabelTableViewCell.swift in Sources */,
 				B4527F1E1FC8F4D600A67088 /* String+Extended.swift in Sources */,

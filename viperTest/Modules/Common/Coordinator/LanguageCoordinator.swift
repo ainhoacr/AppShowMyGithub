@@ -9,7 +9,7 @@
 import UIKit
 
 class LanguageCoordinator: NSObject {
-    public class func localized(string: String) -> String {
+    static func localized(string: String) -> String {
         return NSLocalizedString(string, comment: "")
     }
 }

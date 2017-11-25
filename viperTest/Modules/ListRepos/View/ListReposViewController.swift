@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import PKHUD
 
 class ListReposViewController: UIViewController {
     
@@ -30,7 +29,7 @@ class ListReposViewController: UIViewController {
     
     func setData() {
         self.presenter?.updateView()
-        HUD.show(.progress)
+        LoadManager.show()
     }
     
     func setupView() {
@@ -59,7 +58,7 @@ class ListReposViewController: UIViewController {
 extension ListReposViewController: ListReposViewControllerProtocol {
     
     func showData(data: Array<Any>) {
-        HUD.hide()
+        LoadManager.hide()
         self.repositories = data
         self.collectionView.reloadData()
     }

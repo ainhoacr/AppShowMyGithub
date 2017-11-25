@@ -47,11 +47,11 @@ class LabelTableViewCell: UITableViewCell {
         self.subtitle.numberOfLines = 0
     }
     
-    class func preferredIndetifier() -> String {
+    static func preferredIndetifier() -> String {
         return String(describing: LabelTableViewCell.self)
     }
     
-    class func preferredHeight(width: CGFloat, title: String, subtitle: String, titleFont: UIFont, subtitleFont: UIFont) -> CGFloat {
+    static func preferredHeight(width: CGFloat, title: String, subtitle: String, titleFont: UIFont, subtitleFont: UIFont) -> CGFloat {
         let widthLabel = width - 40
         let height = title.heightWithConstrainedWidth(width: widthLabel, font: titleFont)
         let heightSubtitle = subtitle.heightWithConstrainedWidth(width: widthLabel, font: subtitleFont)
