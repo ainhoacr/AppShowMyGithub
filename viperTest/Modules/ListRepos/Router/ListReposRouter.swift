@@ -38,7 +38,7 @@ class ListReposRouter: NSObject, ListReposRouterProtocol {
         self.dataManager.interactor = presenter
         self.navigationController = UINavigationController(rootViewController: vc)
         
-        self.window.rootViewController = self.navigationController
+        window.rootViewController = self.navigationController
     }
     
     func goToDetail(repository: Repository) {
