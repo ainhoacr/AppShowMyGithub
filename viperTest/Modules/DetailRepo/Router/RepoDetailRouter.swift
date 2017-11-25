@@ -19,10 +19,10 @@ class RepoDetailRouter: NSObject, RepoDetailRouterProtocol {
     override init() {
         super.init()
         
-        vc.presenter = presenter
-        presenter.view = vc
-        presenter.interactor = interactor
-        presenter.router = self
-        navigationController = UINavigationController(rootViewController: vc)
+        self.vc.presenter = presenter
+        self.presenter.view = vc
+        self.presenter.interactor = interactor
+        self.presenter.router = self
+        self.navigationController = UINavigationController(rootViewController: vc)
     }
 }

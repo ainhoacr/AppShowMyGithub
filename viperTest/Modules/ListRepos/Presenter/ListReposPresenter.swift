@@ -20,7 +20,7 @@ class ListReposPresenter: NSObject, ListReposPresenterProtocol {
     }
     
     func didTap(repository: Repository) {
-        router?.goToDetail(repository: repository)
+        self.router?.goToDetail(repository: repository)
     }
 }
 
@@ -29,7 +29,7 @@ extension ListReposPresenter: ListReposInteractorOutputProtocol {
     func setData(repositories: Array<Repository>) {
         if repositories.count > 0 {
             self.repositories = repositories
-            view?.showData(data: repositories)
+            self.view?.showData(data: repositories)
         }
     }
 }

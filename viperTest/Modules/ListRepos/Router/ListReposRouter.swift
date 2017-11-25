@@ -20,25 +20,25 @@ class ListReposRouter: NSObject, ListReposRouterProtocol {
     override init() {
         super.init()
         
-        vc.presenter = presenter
-        presenter.view = vc
-        presenter.interactor = interactor
-        presenter.router = self
-        interactor.dataManager = dataManager
-        dataManager.interactor = presenter
-        navigationController = UINavigationController(rootViewController: vc)
+        self.vc.presenter = presenter
+        self.presenter.view = vc
+        self.presenter.interactor = interactor
+        self.presenter.router = self
+        self.interactor.dataManager = dataManager
+        self.dataManager.interactor = presenter
+        self.navigationController = UINavigationController(rootViewController: vc)
     }
     
     func presentInterfaceFromWindow(window: UIWindow) {
-        vc.presenter = presenter
-        presenter.view = vc
-        presenter.interactor = interactor
-        presenter.router = self
-        interactor.dataManager = dataManager
-        dataManager.interactor = presenter
-        navigationController = UINavigationController(rootViewController: vc)
+        self.vc.presenter = presenter
+        self.presenter.view = vc
+        self.presenter.interactor = interactor
+        self.presenter.router = self
+        self.interactor.dataManager = dataManager
+        self.dataManager.interactor = presenter
+        self.navigationController = UINavigationController(rootViewController: vc)
         
-        window.rootViewController = self.navigationController
+        self.window.rootViewController = self.navigationController
     }
     
     func goToDetail(repository: Repository) {

@@ -17,13 +17,13 @@ class RepoDetailViewController: UIViewController, RepoDetailViewControllerProtoc
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupTableView()
+        self.setupTableView()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        setupView()
+        self.setupView()
     }
     
     func setupView() {
@@ -33,10 +33,10 @@ class RepoDetailViewController: UIViewController, RepoDetailViewControllerProtoc
     
     func setupTableView() {
         
-        tableView = UITableView.init(frame: self.view.frame, style: .plain)
-        tableView.dataSource = self
-        tableView.delegate = self
-        tableView.backgroundColor = .white
+        self.tableView = UITableView.init(frame: self.view.frame, style: .plain)
+        self.tableView.dataSource = self
+        self.tableView.delegate = self
+        self.tableView.backgroundColor = .white
         
         self.view.addSubview(tableView)
     }

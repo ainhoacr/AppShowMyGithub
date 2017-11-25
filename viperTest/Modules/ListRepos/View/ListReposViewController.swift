@@ -18,14 +18,14 @@ class ListReposViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setData()
-        setupCollectionView()
+        self.setData()
+        self.setupCollectionView()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        setupView()
+        self.setupView()
     }
     
     func setData() {
@@ -43,16 +43,16 @@ class ListReposViewController: UIViewController {
         layout.itemSize = CGSize(width: self.view.frame.width, height: 110)
         layout.minimumLineSpacing = 0
         
-        collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
-        collectionView.dataSource = self
-        collectionView.delegate = self
-        collectionView.register(TwoLabelsCollectionViewCell.self, forCellWithReuseIdentifier: TwoLabelsCollectionViewCell.preferredIndetifier())
-        collectionView.backgroundColor = .white
+        self.collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
+        self.collectionView.dataSource = self
+        self.collectionView.delegate = self
+        self.collectionView.register(TwoLabelsCollectionViewCell.self, forCellWithReuseIdentifier: TwoLabelsCollectionViewCell.preferredIndetifier())
+        self.collectionView.backgroundColor = .white
         self.view.addSubview(collectionView)
     }
     
     func didTap(repository: Repository) {
-        presenter?.didTap(repository: repository)
+        self.presenter?.didTap(repository: repository)
     }
 }
 
@@ -96,6 +96,6 @@ extension ListReposViewController: UICollectionViewDelegateFlowLayout {
         collectionView.deselectItem(at: indexPath, animated: true)
         
         let repository = self.repositories[indexPath.item] as! Repository
-        didTap(repository: repository)
+        self.didTap(repository: repository)
     }
 }
