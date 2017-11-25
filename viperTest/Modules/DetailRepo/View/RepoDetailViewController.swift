@@ -34,6 +34,7 @@ class RepoDetailViewController: UIViewController, RepoDetailViewControllerProtoc
     func setupTableView() {
         
         self.tableView = UITableView.init(frame: self.view.frame, style: .plain)
+        self.tableView.separatorStyle = .none
         self.tableView.dataSource = self
         self.tableView.delegate = self
         self.tableView.backgroundColor = .white
@@ -44,19 +45,66 @@ class RepoDetailViewController: UIViewController, RepoDetailViewControllerProtoc
 
 extension RepoDetailViewController: UITableViewDataSource {
     
+    func arrayOfCells() -> Array<Dictionary<String, String>> {
+        
+        var cells = Array<Dictionary<String, String>>()
+        cells.append([self.repository.owner!.avatar! : ""])
+        cells.append([LanguageCoordinator.localized(string: "detail_title") : self.repository.name!])
+        cells.append([LanguageCoordinator.localized(string: "detail_language") : self.repository.language!])
+        cells.append([LanguageCoordinator.localized(string: "detail_url") : self.repository.htmlUrl!])
+        cells.append([LanguageCoordinator.localized(string: "detail_updated") : self.repository.updatedAt!])
+        cells.append([LanguageCoordinator.localized(string: "detail_description") : self.repository.descriptionRepo!])
+        
+        return cells
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return self.arrayOfCells().count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        
+        let arrayCells = self.arrayOfCells()
+        
+        switch indexPath.row {
+        case 0:
+            let imageCell = CenterImageTableViewCell()
+            imageCell.downloadImage(url: arrayCells[indexPath.row].keys.first!)
+            imageCell.selectionStyle = .none
+            
+            return imageCell
+        default:
+            
+            let titleCell = LabelTableViewCell()
+            titleCell.title.text = arrayCells[indexPath.row].keys.first!
+            titleCell.title.font = UIFont.boldSystemFont(ofSize: 16)
+            
+            titleCell.subtitle.text = arrayCells[indexPath.row].values.first!
+            titleCell.subtitle.font = UIFont.systemFont(ofSize: 16)
+            titleCell.selectionStyle = .none
+            
+            return titleCell
+        }
     }
 }
 
 extension RepoDetailViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 0
+        
+        switch indexPath.row {
+        case 0:
+            return CenterImageTableViewCell.preferredHeight()
+        default:
+            let arrayCells = self.arrayOfCells()
+            
+            return LabelTableViewCell.preferredHeight(width: self.view.frame.width, title: arrayCells[indexPath.row].keys.first!, subtitle: arrayCells[indexPath.row].values.first!, titleFont: UIFont.boldSystemFont(ofSize: 16), subtitleFont: UIFont.systemFont(ofSize: 16))
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
