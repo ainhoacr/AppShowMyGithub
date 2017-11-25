@@ -26,11 +26,17 @@ class RepoDetailViewController: UIViewController, RepoDetailViewControllerProtoc
         self.setupView()
     }
     
+    /**
+        Configure nav bar
+     */
     func setupView() {
         self.navigationController?.navigationItem.leftBarButtonItem?.title = ""
         self.title = LanguageCoordinator.localized(string: "title_nav_bar_detail")
     }
     
+    /**
+        Configure the tableView
+     */
     func setupTableView() {
         
         self.tableView = UITableView.init(frame: self.view.frame, style: .plain)
@@ -45,6 +51,11 @@ class RepoDetailViewController: UIViewController, RepoDetailViewControllerProtoc
 
 extension RepoDetailViewController: UITableViewDataSource {
     
+    /**
+        Get array with contains data of cells
+     
+        - Returns: array of dictionay of strings
+     */
     func arrayOfCells() -> Array<Dictionary<String, String>> {
         
         var cells = Array<Dictionary<String, String>>()

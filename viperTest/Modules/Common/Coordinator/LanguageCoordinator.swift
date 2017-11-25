@@ -9,6 +9,13 @@
 import UIKit
 
 class LanguageCoordinator: NSObject {
+    
+    /**
+        Manage localized strings
+     
+        - Parameter string: key of string
+        - Returns: value of string localized
+     */
     static func localized(string: String) -> String {
         return NSLocalizedString(string, comment: "")
     }

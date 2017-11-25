@@ -34,16 +34,20 @@ public final class Repository: Mappable, NSCoding {
     public var descriptionRepo: String?
     
     // MARK: ObjectMapper Initializers
-    /// Map a JSON object to this class using ObjectMapper.
-    ///
-    /// - parameter map: A mapping from ObjectMapper.
+    /**
+     Map a JSON object to this class using ObjectMapper.
+     
+     - Parameter map: A mapping from ObjectMapper.
+     */
     public required init?(map: Map){
         
     }
     
-    /// Map a JSON object to this class using ObjectMapper.
-    ///
-    /// - parameter map: A mapping from ObjectMapper.
+    /**
+     Map a JSON object to this class using ObjectMapper.
+     
+     - Parameter map: A mapping from ObjectMapper.
+     */
     public func mapping(map: Map) {
         fork <- map[SerializationKeys.fork]
         descriptionValue <- map[SerializationKeys.descriptionValue]
@@ -55,9 +59,11 @@ public final class Repository: Mappable, NSCoding {
         descriptionRepo <- map[SerializationKeys.descriptionRepo]
     }
     
-    /// Generates description of the object in the form of a NSDictionary.
-    ///
-    /// - returns: A Key value pair containing all valid values in the object.
+    /**
+     Generates description of the object in the form of a NSDictionary.
+     
+     - Returns: A Key value pair containing all valid values in the object.
+     */
     public func dictionaryRepresentation() -> [String: Any] {
         var dictionary: [String: Any] = [:]
         dictionary[SerializationKeys.fork] = fork

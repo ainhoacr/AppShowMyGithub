@@ -15,6 +15,9 @@ class TwoLabelsCollectionViewCell: UICollectionViewCell {
     var secondLabel: UILabel!
     var customContentView: UIView!
 
+    /**
+        Initialize cell
+     */
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.setupLayout()
@@ -24,6 +27,9 @@ class TwoLabelsCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    /**
+        Configure the layout of cell
+     */
     func setupLayout() {
         
         self.customContentView = UIView()
@@ -64,6 +70,11 @@ class TwoLabelsCollectionViewCell: UICollectionViewCell {
         self.customContentView.layer.borderWidth = 0.5
     }
     
+    /**
+        Get cell identifier
+     
+        - Returns: identifier
+     */
     static func preferredIndetifier() -> String {
         return String(describing: TwoLabelsCollectionViewCell.self)
     }

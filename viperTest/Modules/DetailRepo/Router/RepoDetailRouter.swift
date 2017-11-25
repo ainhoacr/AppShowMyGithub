@@ -16,6 +16,9 @@ class RepoDetailRouter: NSObject, RepoDetailRouterProtocol {
     let interactor = RepoDetailInteractor()
     var navigationController: UINavigationController?
     
+    /**
+        Initialize dependencies
+     */
     override init() {
         super.init()
         

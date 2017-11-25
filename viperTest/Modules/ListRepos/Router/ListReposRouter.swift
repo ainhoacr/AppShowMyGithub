@@ -17,6 +17,9 @@ class ListReposRouter: NSObject, ListReposRouterProtocol {
     let dataManager = DataManager()
     var navigationController: UINavigationController?
     
+    /**
+     Initialize dependencies
+     */
     override init() {
         super.init()
         

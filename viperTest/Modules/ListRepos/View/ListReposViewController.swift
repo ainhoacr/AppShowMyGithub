@@ -27,15 +27,24 @@ class ListReposViewController: UIViewController {
         self.setupView()
     }
     
+    /**
+        Get data from server and show loading
+    */
     func setData() {
         self.presenter?.updateView()
         LoadManager.show()
     }
     
+    /**
+        Configure title of view
+     */
     func setupView() {
         self.title = LanguageCoordinator.localized(string: "title_nav_bar")
     }
     
+    /**
+        Configure the collectionView
+     */
     func setupCollectionView() {
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)

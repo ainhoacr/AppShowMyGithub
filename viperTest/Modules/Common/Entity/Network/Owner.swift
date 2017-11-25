@@ -22,24 +22,30 @@ public final class Owner: Mappable, NSCoding {
     public var avatar: String?
     
     // MARK: ObjectMapper Initializers
-    /// Map a JSON object to this class using ObjectMapper.
-    ///
-    /// - parameter map: A mapping from ObjectMapper.
+    /**
+        Map a JSON object to this class using ObjectMapper.
+    
+        - Parameter map: A mapping from ObjectMapper.
+     */
     public required init?(map: Map){
         
     }
     
-    /// Map a JSON object to this class using ObjectMapper.
-    ///
-    /// - parameter map: A mapping from ObjectMapper.
+    /**
+        Map a JSON object to this class using ObjectMapper.
+ 
+        - Parameter map: A mapping from ObjectMapper.
+    */
     public func mapping(map: Map) {
         login <- map[SerializationKeys.login]
         avatar <- map[SerializationKeys.avatar]
     }
     
-    /// Generates description of the object in the form of a NSDictionary.
-    ///
-    /// - returns: A Key value pair containing all valid values in the object.
+    /**
+        Generates description of the object in the form of a NSDictionary.
+ 
+        - Returns: A Key value pair containing all valid values in the object.
+    */
     public func dictionaryRepresentation() -> [String: Any] {
         var dictionary: [String: Any] = [:]
         if let value = login { dictionary[SerializationKeys.login] = value }

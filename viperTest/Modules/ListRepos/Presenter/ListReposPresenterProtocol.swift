@@ -9,11 +9,16 @@
 import UIKit
 
 protocol ListReposPresenterProtocol: class {
-
-    var view: ListReposViewControllerProtocol? {get set}
-    var interactor: ListReposInteractorProtocol? {get set}
-    var router: ListReposRouterProtocol? {get set}
     
+    /**
+        Update data to show in view
+    */
     func updateView()
+    
+    /**
+        Navigate to detail repository
+     
+        - Parameter repository: repository to show detail
+    */
     func didTap(repository: Repository)
 }

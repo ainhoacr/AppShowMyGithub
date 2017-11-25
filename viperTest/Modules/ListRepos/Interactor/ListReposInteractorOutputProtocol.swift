@@ -10,5 +10,10 @@ import UIKit
 
 protocol ListReposInteractorOutputProtocol: class {
 
+    /**
+        Send data to presenter
+     
+        - Parameter repositories: array of repositories
+    */
     func setData(repositories: Array<Repository>)
 }

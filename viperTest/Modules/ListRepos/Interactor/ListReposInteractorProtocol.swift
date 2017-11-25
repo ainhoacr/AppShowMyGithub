@@ -9,8 +9,9 @@
 import UIKit
 
 protocol ListReposInteractorProtocol: class {
-
-    var dataManager: DataManagerProtocol? {get set}
     
+    /**
+        Get data from server
+    */
     func getData()
 }

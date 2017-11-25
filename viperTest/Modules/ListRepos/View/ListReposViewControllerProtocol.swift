@@ -10,5 +10,11 @@ import UIKit
 
 protocol ListReposViewControllerProtocol: class {
 
+    
+    /**
+        Show data received from parameter
+     
+        - Parameter data: data to show
+    */
     func showData(data: Array<Any>)
 }

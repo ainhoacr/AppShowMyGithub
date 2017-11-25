@@ -12,6 +12,9 @@ class CenterImageTableViewCell: UITableViewCell {
 
     var myImageView: UIImageView!
     
+    /**
+        Initialize cell
+     */
     init() {
         super.init(style: .default, reuseIdentifier: "")
         
@@ -22,6 +25,9 @@ class CenterImageTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    /**
+        Configure the layout of cell
+     */
     func setupLayout() {
         self.myImageView = UIImageView()
         
@@ -33,6 +39,11 @@ class CenterImageTableViewCell: UITableViewCell {
         }
     }
     
+    /**
+        Download and show the image
+     
+        - Parameter url: url of the image that show in cell
+     */
     func downloadImage(url: String) {
         DispatchQueue.global(qos: .background).async {
             
@@ -46,10 +57,20 @@ class CenterImageTableViewCell: UITableViewCell {
         }
     }
     
+    /**
+        Get cell identifier
+     
+        - Returns: identifier
+     */
     static func preferredIndetifier() -> String {
         return String(describing: CenterImageTableViewCell.self)
     }
     
+    /**
+        Get height of cell
+     
+        - Returns: height
+     */
     static func preferredHeight() -> CGFloat {
         return 140
     }

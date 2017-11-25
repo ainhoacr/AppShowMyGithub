@@ -11,11 +11,17 @@ import NVActivityIndicatorView
 
 class LoadManager: NSObject {
     
+    /**
+        Show load indicator
+     */
     static func show() {
         let activityData = ActivityData(size: CGSize(width: 40, height: 40), message: nil, messageFont: nil, type: .ballTrianglePath, color: .purple, padding: 0, displayTimeThreshold: 2, minimumDisplayTime: 2, backgroundColor: ColorCoordinator.backgroundGray(), textColor: nil)
         NVActivityIndicatorPresenter.sharedInstance.startAnimating(activityData)
     }
     
+    /**
+        Hide load indicator
+     */
     static func hide() {
         NVActivityIndicatorPresenter.sharedInstance.stopAnimating()
     }
