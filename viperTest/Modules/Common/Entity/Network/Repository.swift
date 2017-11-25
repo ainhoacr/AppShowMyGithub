@@ -94,5 +94,14 @@ public final class Repository: Mappable, NSCoding {
         aCoder.encode(descriptionRepo, forKey: SerializationKeys.descriptionRepo)
     }
     
+    func formattedString() -> String {
+        let dateFormat = DateFormatter()
+        dateFormat.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
+        let date = dateFormat.date(from: self.updatedAt!)
+        
+        dateFormat.dateFormat = "dd-MM-yyyy HH:mm:ss"
+        return dateFormat.string(from: date!)
+        
+    }
 }
 
